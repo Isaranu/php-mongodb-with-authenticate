@@ -4,9 +4,9 @@ $req = $_SERVER['REQUEST_METHOD'];
 
 if($req=='GET'){
 
-  // Connect mongodb without password.
+  ## Connect mongodb without password.
     //$m = new MongoClient();
-  // Connect mongodb with username and password (authentication mode)
+  ## Connect mongodb with username and password (authentication mode)
     $m = new MongoClient("mongodb://localhost", array("username" => "your-username", "password" => "your-password"));
 
   if($m){
